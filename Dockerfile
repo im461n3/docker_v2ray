@@ -12,4 +12,4 @@ ADD install-release.sh /usr/v2ray/install-release.sh
 ADD config.json /usr/v2ray/config.json
 RUN chmod +x /usr/v2ray/install-release.sh
 RUN bash /usr/v2ray/install-release.sh
-ENTRYPOINT ["/usr/bin/v2ray/v2ray --config /etc/v2ray/config.json"]
+ENTRYPOINT ["/usr/bin/v2ray/v2ray", "--config", "/etc/v2ray/config.json"]
